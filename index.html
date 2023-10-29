@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav><h2><span>BK</span>bibhesh</h2>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="menu" onclick="closemenu()">✂</i>
+                </ul>
+                <i class="menu" onclick="openmenu()">▤</i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hii i am <span>Bibhesh </span>from india</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/smallabout.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Culpa tenetur a omnis quaerat totam ratione doloremque exercitationem,
+                        expedita accusamus iste eius natus iure nihil eligendi
+                        . Quidem, beat
+                        ae. Qui enim veritatis, voluptatibus explicabo similique unde porro?</p>
+                        <div class="tab-titles">
+                            <p class="tablinks activelink" onclick="opntab('skills')">Skills</p>
+                            <p class="tablinks" onclick="opntab('exp')">Experience</p>
+                            <p class="tablinks" onclick="opntab('edu')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>Data Science</li>
+                                <li><span>Java</span><br>Data Science</li>
+                                <li><span>Python</span><br>Data Science</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="exp">
+                            <ul>
+                                <li><span>Python</span><br>Freasher</li>
+                                <li><span>Java</span><br>Freasher</li>
+                                <li><span>Mern</span><br>Freasher</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="edu">
+                            <ul>
+                                <li><span>10th</span><br></li>
+                                <li><span>12th</span><br></li>
+                                <li><span>B.tech</span><br></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div><h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Sapiente accusantium cupiditate ea placeat!</p>
+                     <a href="#">Learn more</a>
+                </div>
+                <div><h2>Developer</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Sapiente accusantium cupiditate ea placeat!</p>
+                         <a href="#">Learn more</a>
+                    </div>
+                    <div><h2>Data Analysis</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                             Sapiente accusantium cupiditate ea placeat!</p>
+                             <a href="#">Learn more</a>
+                        </div>
+            </div>
+        </div>
+    </div>
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./workimage.jpg" alt="">
+                <div class="layer">
+                    <h3>Social Media</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Praesentium rem pariatur qui?</p>
+                         <a href="#">Go</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./workimage.jpg" alt="">
+                <div class="layer">
+                    <h3>School</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Praesentium rem pariatur qui?</p>
+                         <a href="#">Go</a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./workimage.jpg" alt="">
+                <div class="layer">
+                    <h3>E Commerce</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur
+                         adipisicing elit. Praesentium rem pariatur qui?</p>
+                         <a href="#">Go</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- contect -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contect-left">
+                <h1 class="subtitle">Contect Me</h1>
+                <p>Bkbibhesh@gmail.com</p>
+                <p>876543123</p>
+                <div class="social-icons">
+                    <a href=""><i>Linked-In</i></a>
+                    <a href=""><i>X</i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1kQFtWXy2llvFfeaw-usW_aVI3FSePN3K/view?usp=drive_link" id="btn-view" class="btn" target="_blank">View Cv</a>
+            </div>
+            <div class="contect-right"></div>
+            <form name='submit-to-google-sheet'>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your mail id" required>
+                <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="copyrignt">
+    <p>Copyright @ Bkbibhesh. Made With <span id="red">❤</span></p>
+</div>
+<script src="./script.js"></script>
+</body>
+
+</html>
