@@ -31,7 +31,7 @@ nav{
 }
 nav h2{
     text-shadow: 2px 2px #940606d7;
-    font-family: \;
+    font-family: cursive;
 }
 nav h2 span{
     color: #df0f0f;
@@ -272,7 +272,9 @@ nav ul li a:hover::after{
 }
 #btn-view{
     text-decoration: none;
+    background-color: #e93a3a;
     font-size: small;
+    border: solid #e93a3a;  
 }
 #btn-view:hover{
     background-color: #ff004f;
@@ -385,3 +387,7 @@ nav .menu{
         text-align: center;
     }
 }
+
+
+
+/* Movies */
